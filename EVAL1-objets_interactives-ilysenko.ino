@@ -48,6 +48,8 @@ void loop()
   if (bouton1.isPressed())
   {
     digitalWrite(BROCHE_DEL1, HIGH);
+    Serial.print("bouton6 ");
+    Serial.println(1);
   }
   else
     {
@@ -58,6 +60,8 @@ void loop()
     if(clignotementActif == 0){
             clignotementActif = 1;
             etatDel2 = 1;
+            Serial.print("bouton8 ");
+            Serial.println(1);
         } else {
             clignotementActif = 0;
             etatDel2 = 0;
